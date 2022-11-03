@@ -1,0 +1,25 @@
+{
+  "name": "Hide tooltip",
+  "version": "1.0.0",
+  "description": "Hides anchor tooltip notifications in chrome.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "assets/link-icon.png",
+      "24": "assets/link-icon.png",
+      "32": "assets/link-icon.png"
+    },
+    "default_title": "Hide tooltip - Chrome",
+    "default_popup": "index.html"
+  },
+  "manifest_version": 3
+}
